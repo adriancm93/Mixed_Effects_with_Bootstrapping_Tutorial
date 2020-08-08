@@ -5,7 +5,7 @@ seasons <- 2000:2019
 pbp <- purrr::map_df(seasons, function(x) {
   readRDS(
     url(
-      glue::glue("https://raw.githubusercontent.com/guga31bb/nflfastR-data/master/legacy-data/play_by_play_{x}.rds")
+      glue::glue("https://raw.githubusercontent.com/guga31bb/nflfastR-data/master/data/play_by_play_{x}.rds")
     )
   )
 })
