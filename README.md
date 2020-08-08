@@ -37,6 +37,13 @@ Random effects:
 - Opposing defensive team*Season (a proxy for opposing defensive roster)
 - Possession team*Season (a proxy for offensive supporting cast)
 
+**Limitations**
+
+A couple of limitations with computer power and time will be discussed further.
+
+The main limitation is the lack of play-caller data (is it the Offensive Coordinator callimg the plays or ia it the Head Coach?. As of now, most probably the OC is being captured in our proxy for supporting cast, which is problematic.
+
+There is probably a similar problem with lack of Defensive play-caller (Defensive Coordinator).
 
 **Packages**
 
