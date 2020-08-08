@@ -1,9 +1,16 @@
+# This repo includes:
+- Prepared data
+- R script to perform analysis
+- R script to prepare dataset
+- **Mixed Effects Modeling with Bootstrapping Tutorial:**
+
 # Mixed Effects Modeling with Bootstrapping Tutorial
- Exercise to leverage re-sampling (bootstrapping) and Mixed Effects modeling for NFL analysis.
 
-*The purpose of this is to show how to leverage re-sampling (bootstrapping) and Mixed Effects modeling for NFL analysis. The goal is to determine which factor is the most important in passing offense: QB ability, HC competence, Opposing HC competence or Supporting Cast*. 
+*The purpose of this tutorial is to show how to leverage re-sampling (bootstrapping) and Mixed Effects modeling for NFL analysis.*
 
-**Goal statement, and variables**
+The goal is to determine which factor is the most important in passing offense: QB ability, HC competence, Opposing HC competence or Supporting Cast*. 
+
+**Goal statement**
 
 The goal is to determine the most valuable aspect in passing offense by finding the distribution of theta (θ) for the random effect variables in the sample when trying to predict EPA. 
 
