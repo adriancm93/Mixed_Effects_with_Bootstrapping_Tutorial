@@ -101,6 +101,7 @@ getME(mixed_model, "theta") #Research Cholesky factors | try ?getME
 fixef(mixed_model)
 ```
 For the next section, I followed this case study: https://stats.idre.ucla.edu/r/dae/mixed-effects-logistic-regression/ 
+
 This amazing tutorial will explain everything about logistic mixed-effects models, and it has a section to explain how bootstrapping works. I highly recommend reading it. It is a tutorial for logistic mixed models, but it works well for our linear model as well. 
 
 **Create re-sampling function and re-sample***
@@ -218,8 +219,12 @@ final_transposed<-t(final) %>% data.frame()
 **Future Analysis**
 
 As Parker explained to me, it would be a good idea to allow QB to interact with the different random-effects. That way we would be able to measure:
-1- QB true value
-2- Which factors impact QB performance (not passing offense) the most. The way interaction variables work, is that they allow us to see the marginal effect of one variable over the other. For example: by how much the effect of a QB ability change, on average, when the supporting cast improves.
+
+- QB true value
+
+- Which factors impact QB performance (not passing offense) the most. 
+
+The way interaction variables work, is that they allow us to see the marginal effect of one variable over the other. For example: by how much the effect of a QB ability change, on average, when the supporting cast improves.
 
 Another pending thing to do is measure opposing defending team effect. I will try to increase the number of simulations to get a better estimate, not only for this variable but for all my random-effects. Ideally, it would be 1000 simulations.
 
