@@ -10,11 +10,8 @@ loadfonts(device = "win")
 library(parallel)
 set1<-brewer.pal(n = 9, name = "Set1") #This is to see color codes
 
-#set directory
-setwd("~/GitHub/Mixed_Effects_with_Bootstrapping_Tutorial")
-
-#Loead prepared data:
-pbp_mut <- readRDS('data/pbp_mut.RDS')
+#Loead prepared data
+pbp_mut <- readRDS(url("https://raw.githubusercontent.com/adriancm93/Mixed_Effects_with_Bootstrapping_Tutorial/master/data/pbp_mut.RDS"))
 
 #Mixed model 
 mixed_model<-pbp_mut %>% 

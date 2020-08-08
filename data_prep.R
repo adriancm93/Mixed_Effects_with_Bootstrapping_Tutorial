@@ -38,5 +38,3 @@ pbp_mut<-pbp%>%
     game_half != 'Overtime',
     season.x > 2005
   ) %>% select(epa,temp,wind,home,season,player_id,pos_coach,def_coach,team,opponent,wp)
-
-
