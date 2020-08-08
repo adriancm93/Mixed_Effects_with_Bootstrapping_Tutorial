@@ -12,10 +12,12 @@
 **Goal statement, and variables**
 
 The goal is to determine the most valuable aspect in passing offense by finding the distribution of theta (θ) for the random effect variables in the sample when trying to predict EPA. 
+
 Theta is a vector of the random-effects parameter estimates: these are parameterized as the relative Cholesky factors of each random effect term (from R getME documentation).
+
 My buddy **Parker** @statsowar gave me the following description in "super lame terms" as I asked him to do: "Cholesky just breaks down the R^2 and attributes it to different sources".
 
-In other words, we will use these coefficients to measure the absolute impact each variable has on passing EPA (how variance it explains).
+In other words, we will use these coefficients to measure the absolute impact each variable has on passing EPA (how much variance it explains).
 
 *Parker gave me very good feedback and suggestions for future research and to improve my model, which I'll discuss at the end. Yes, **Parker** is a genius* 
 
