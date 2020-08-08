@@ -12,7 +12,7 @@ The goal is to determine which factor is the most important in passing offense: 
 
 **Goal statement**
 
-The goal is to determine the most valuable aspect in passing offense by finding the distribution of theta (θ) for the random effect variables in the sample when trying to predict EPA. 
+The goal is to determine the most valuable aspect in passing offense by finding the bootstrapped distribution of theta (θ): θ_i is the meassure of the impact of random effect *i* on EPA.
 
 Theta is a vector of the random-effects parameter estimates: these are parameterized as the relative Cholesky factors of each random effect term (from R getME documentation).
 
