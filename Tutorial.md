@@ -211,6 +211,8 @@ Another pending thing to do is measure opposing defending team effect. I will tr
 
 *Before continuing, I would like to shout-out my research-partner, twitter-and-zoom-friend, and future podcast Co-host: **Sam Struthers** @Sam_S35. I learned a lot about data viz from him while working on a project together.*
 
+*The last shout-out (I promise) goes to Analytics Twitter extraordinaire and great buddy Daniel Houston @CowboysStats for his help with clarity and presentation. It doesn't matter how good the analysis if you can't tell the story effectively!*
+
 Data viz is very important and now we will prepare the data for plotting. 
 I decided not to include Opposing Defensive Team in the plot. I feel like a lot more simulations are needed to capture its true effect (around 1000 maybe). Maybe one day.
 
