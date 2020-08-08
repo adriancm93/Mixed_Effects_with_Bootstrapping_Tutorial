@@ -100,9 +100,10 @@ mixed_model %>% summary()
 getME(mixed_model, "theta") #Research Cholesky factors | try ?getME
 fixef(mixed_model)
 ```
-For the next section, I followed this case study: https://stats.idre.ucla.edu/r/dae/mixed-effects-logistic-regression/ 
+For the next section, I followed this case study by The Institute for Digital Research and Education - UCLA: 
+https://stats.idre.ucla.edu/r/dae/mixed-effects-logistic-regression/ 
 
-This amazing tutorial will explain everything about logistic mixed-effects models, and it has a section to explain how bootstrapping works. I highly recommend reading it. It is a tutorial for logistic mixed models, but it works well for our linear model as well. 
+This amazing tutorial explains everything about logistic mixed-effects models, and it has a section to explain how bootstrapping works. I highly recommend reading it. It is a tutorial for logistic mixed models, but it works well for our linear model as well. 
 
 **Create re-sampling function and re-sample***
 
