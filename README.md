@@ -6,7 +6,7 @@
 
 # Mixed Effects Modeling with Bootstrapping Tutorial
 
-*The purpose of this tutorial is to show how to leverage re-sampling (bootstrapping) and Mixed Effects modeling for NFL analysis. 
+*The purpose of this tutorial is to show how to leverage re-sampling (bootstrapping) and Mixed Effects modeling for NFL analysis.*
 
 The goal is to determine which factor is the most important in passing offense: QB ability, HC competence, Opposing HC competence or Supporting Cast*. 
 
