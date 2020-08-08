@@ -1,8 +1,8 @@
-#This repo includes:
+# This repo includes:
 - Prepared data
 - R script to perform analysis
 - R script to prepare dataset
-- Tutorial which is the following:
+- **Mixed Effects Modeling with Bootstrapping Tutorial:**
 
 # Mixed Effects Modeling with Bootstrapping Tutorial
  Exercise to leverage re-sampling (bootstrapping) and Mixed Effects modeling for NFL analysis.
