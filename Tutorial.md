@@ -16,7 +16,7 @@ The goal is to determine the most valuable aspect in passing offense by finding 
 
 Theta is a vector of the random-effects parameter estimates: these are parameterized as the relative Cholesky factors of each random effect term (from R getME documentation).
 
-My buddy **Parker** @statsowar gave me the following description in "super lame terms" as I asked him to do: "Cholesky just breaks down the R^2 and attributes it to different sources".
+My buddy **Parker** @statsowar gave me the following description in "super lay terms" as I asked him to do: "Cholesky just breaks down the R^2 and attributes it to different sources".
 
 In other words, we will use these coefficients to measure the absolute impact each variable has on passing EPA (how much variance it explains).
 
