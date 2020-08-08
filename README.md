@@ -4,6 +4,8 @@
 - R script to prepare dataset
 - **Mixed Effects Modeling with Bootstrapping Tutorial:**
 
+Data courtesy of the amazing nflfastR team.
+
 # Mixed Effects Modeling with Bootstrapping Tutorial
 
 *The purpose of this tutorial is to show how to leverage re-sampling (bootstrapping) and Mixed Effects modeling for NFL analysis.*
