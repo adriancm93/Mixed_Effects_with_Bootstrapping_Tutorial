@@ -2,11 +2,9 @@
 
 *The purpose of this tutorial is to show how to leverage re-sampling (bootstrapping) and Mixed Effects modeling for NFL analysis.*
 
-The goal is to determine which factor is the most important in passing offense: QB ability, HC competence, Opposing HC competence or Supporting Cast*. 
-
 **Goal statement**
 
-The goal is to determine the most valuable aspect in passing offense by finding the bootstrapped distribution of theta (θ): θ_i is the meassure of the impact of random effect *i* on EPA.
+The goal is to determine which factor is the most important in passing offense: QB ability, HC competence, Opposing HC competence or Supporting Cast. How? By finding the bootstrapped distribution of theta (θ): θ<sub>i</sub> is the meassure of the impact of random effect *i* on EPA.
 
 Theta is a vector of the random-effects parameter estimates: these are parameterized as the relative Cholesky factors of each random effect term (from R getME documentation).
 
