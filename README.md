@@ -16,7 +16,7 @@ The goal is to determine which factor is the most important in passing offense: 
 
 Theta is a vector of the random-effects parameter estimates: these are parameterized as the relative Cholesky factors of each random effect term (from R getME documentation).
 
-My buddy and stats wizard **Parker** @statsowar gave me the following description in "super lay terms" as I asked him to do: "Cholesky just breaks down the R^2 and attributes it to different sources".
+My buddy and stats wizard **Parker Fleming** @statsowar gave me the following description in "super lay terms" as I asked him to do: "Cholesky just breaks down the R^2 and attributes it to different sources".
 
 In other words, we will use these coefficients to measure the absolute impact each variable has on passing EPA (how much variance it explains).
 
@@ -63,7 +63,7 @@ set1<-brewer.pal(n = 9, name = "Set1") #This is to see color codes
 
 **Pre-processing**
 
-Look at data_prep.R file to see which variables I created and how I filtered data. The goal here was to make the sample as small as possible since bootstrapping is extremely computationally demanding and I didn't have two days to spare.
+Look at data_prep.R file to see which variables I created and how I filtered data. I wanted to make the sample as small as possible, since bootstrapping is extremely computationally demanding and I didn't have two days to spare.
 
 **Load data**
 
@@ -73,7 +73,7 @@ pbp_mut <- readRDS(url("https://raw.githubusercontent.com/adriancm93/Mixed_Effec
 
 **Mixed-Effects Model with full data**
 
-Here we will be using multiple random effects ```(1|variable)```. It is possible to make these variables interact (one of Parker's recommendations which I'll be doing in the near future) this way: ```(1|player_id::pos_coach)```.
+Here we will be using multiple random effects ```(1|variable)```. It is possible to make these variables interact (one of Parker's recommendations which I'll be doing in the near future) this way: ```(1|player_id:pos_coach)```.
 We will be using ```getME("theta")``` to get theta (θ) of the random effects. Remember, each simulation will have a different theta (due re-sampling) and then we will plot the distribution of these. ```fixef()``` is used to retrieve the estimates of the fixed effects (beta: β).
 
 ```
@@ -151,7 +151,7 @@ end_time - start_time
 start_time <- Sys.time(); resampled_data <- cbind(indx, pbp_mut[indx$RowID, ]);end_time <- Sys.time()
 end_time - start_time
 ```
-I recommend saving resampled_data as a local RDS file and delete it since it is very heavy. But this is up to you.
+I recommend saving resampled_data as a local RDS file and delete it since it is very heavy, but this is up to you.
 
 **re-Fitting the model using simulations**
 
@@ -161,7 +161,7 @@ The next steps will consist of re-running the model multiple times, one per re-s
 f <- fixef(mixed_model)
 r <- getME(mixed_model, "theta")
 ```
-As I mentioned before, this can be very expensive and time-consuming. So we will use parallel processing to speed-up things. I will be using 4 clusters because my laptop has 4 processors. (check how many your computer has and change makeClusters() if needed.
+As I mentioned before, this can be very expensive and time-consuming, so we will use parallel processing to speed-up things. I will be using 4 clusters because my laptop has 4 processors. (check how many your computer has and change makeClusters() if needed.
 ```
 clus <- makeCluster(4)
 clusterExport(clus, c("resampled_data", "f", "r"))
@@ -194,7 +194,7 @@ boot_function <- function(i) {
   c(fixef(simu), getME(simu, "theta"))
 }
 ```
-Here we do a loop to fit our model using the boot_function we created. It will run one time per simulation (200). This is the most time-consuming part of the analysis, so turn on Netflix and relax. Also, make sure to not use your computer since it will be running at max capacity. 
+Here we do a loop to fit our model using the boot_function we created. It will run one time per simulation (x200). This is the most time-consuming part of the analysis, so turn on Netflix and relax. Also, make sure to not use your computer since it will be running at max capacity. 
 
 After we are done, we stop the cluster
 
