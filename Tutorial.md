@@ -1,9 +1,3 @@
-# This repo includes:
-- Prepared data
-- R script to perform analysis
-- R script to prepare dataset
-- **Mixed Effects Modeling with Bootstrapping Tutorial:**
-
 # Mixed Effects Modeling with Bootstrapping Tutorial
 
 *The purpose of this tutorial is to show how to leverage re-sampling (bootstrapping) and Mixed Effects modeling for NFL analysis.*
@@ -12,7 +6,7 @@ The goal is to determine which factor is the most important in passing offense: 
 
 **Goal statement**
 
-The goal is to determine the most valuable aspect in passing offense by finding the distribution of theta (θ) for the random effect variables in the sample when trying to predict EPA. 
+The goal is to determine the most valuable aspect in passing offense by finding the bootstrapped distribution of theta (θ): θ_i is the meassure of the impact of random effect *i* on EPA.
 
 Theta is a vector of the random-effects parameter estimates: these are parameterized as the relative Cholesky factors of each random effect term (from R getME documentation).
 
@@ -100,9 +94,10 @@ mixed_model %>% summary()
 getME(mixed_model, "theta") #Research Cholesky factors | try ?getME
 fixef(mixed_model)
 ```
-For the next section, I followed this case study: https://stats.idre.ucla.edu/r/dae/mixed-effects-logistic-regression/ 
+For the next section, I followed this case study by The Institute for Digital Research and Education - UCLA: 
+https://stats.idre.ucla.edu/r/dae/mixed-effects-logistic-regression/ 
 
-This amazing tutorial will explain everything about logistic mixed-effects models, and it has a section to explain how bootstrapping works. I highly recommend reading it. It is a tutorial for logistic mixed models, but it works well for our linear model as well. 
+This amazing tutorial explains everything about logistic mixed-effects models, and it has a section to explain how bootstrapping works. I highly recommend reading it. It is a tutorial for logistic mixed models, but it works well for our linear model as well. 
 
 **Create re-sampling function and re-sample***
 
