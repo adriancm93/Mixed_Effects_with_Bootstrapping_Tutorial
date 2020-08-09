@@ -20,7 +20,7 @@ My buddy and stats wizard **Parker Fleming** @statsowar gave me the following de
 
 In other words, we will use these coefficients to measure the absolute impact each variable has on passing EPA (how much variance it explains).
 
-*Parker gave me very good feedback and suggestions for future research and to improve my model, which I'll discuss at the end. Yes, **Parker** is a genius* 
+*Parker gave me very good feedback and suggestions for future research and to improve my model, which I'll discuss at the end. Yes, **Parker** is a genius*. 
 
 **Model specs:**
 
@@ -105,9 +105,9 @@ https://stats.idre.ucla.edu/r/dae/mixed-effects-logistic-regression/
 
 This amazing tutorial explains everything about logistic mixed-effects models, and it has a section to explain how bootstrapping works. I highly recommend reading it. It is a tutorial for logistic mixed models, but it works well for our linear model as well. 
 
-**Create re-sampling function and re-sample***
+**Create re-sampling function and re-sample**
 
-To bootstrap multi-level models, "We start by resampling from the highest level, and then stepping down one level at a time". as UCLA tutorial explains.
+To bootstrap multi-level models, "We start by resampling from the highest level, and then stepping down one level at a time", as UCLA tutorial explains.
 
 For that, we are using code from the amazing Biostatistics Department at Vanderbilt: http://biostat.mc.vanderbilt.edu/wiki/Main/HowToBootstrapCorrelatedData
 
@@ -225,7 +225,7 @@ As Parker explained to me, it would be a good idea to allow QB to interact with 
 
 - Which factors impact QB performance (not passing offense) the most. 
 
-The way interaction variables work, is that they allow us to see the marginal effect of one variable over the other. For example: by how much the effect of a QB ability change, on average, when the supporting cast improves.
+Interaction variables allow us to see the marginal effect of one variable over the other. For example: by how much the effect of a QB ability change, on average, when the supporting cast improves.
 
 Another pending thing to do is measure opposing defending team effect. I will try to increase the number of simulations to get a better estimate, not only for this variable but for all my random-effects. Ideally, it would be 1000 simulations.
 
