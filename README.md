@@ -10,6 +10,9 @@ Data courtesy of the amazing nflfastR team.
 
 *The purpose of this tutorial is to show how to leverage re-sampling (bootstrapping) and Mixed Effects modeling for NFL analysis.*
 
+Result:
+![Test Image 1](passing_factors.png)
+
 **Goal statement**
 
 The goal is to determine which factor is the most important in passing offense: QB ability, HC competence, Opposing HC competence or Supporting Cast. How? By finding the bootstrapped distribution of theta (θ): θ<sub>i</sub> is the meassure of the impact of random effect *i* on EPA.
@@ -326,6 +329,5 @@ impactful factor')
 ggsave('passing_factors.png', dpi=1000, width = 12.5, height = 8, units = "cm")
 ```
 
-![Test Image 1](passing_factors.png)
 
 Thanks! I hope this helps. For any questions, please find me @adrian_cadem on twitter or to my email: adriancadenam93@gmail.com <- but try to send me a DM since I might miss it
