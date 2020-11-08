@@ -326,4 +326,6 @@ impactful factor')
 ggsave('passing_factors.png', dpi=1000, width = 12.5, height = 8, units = "cm")
 ```
 
+![Test Image 1](passing_factors.png)
+
 Thanks! I hope this helps. For any questions, please find me @adrian_cadem on twitter or to my email: adriancadenam93@gmail.com <- but try to send me a DM since I might miss it
